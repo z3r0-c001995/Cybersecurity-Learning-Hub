@@ -1,10 +1,10 @@
 import React from "react";
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
+import { Layout } from "./components/Layout";
+import { NetworkBackground } from "./components/animations/NetworkBackground";
 import { Shield, Code, ChevronRight, Terminal, Brain, Lock, Clock, BarChart, Users, Laptop, Network, Shield as ShieldIcon, Database, Globe, Server } from "lucide-react";
 export function App() {
-  return <div className="min-h-screen bg-gray-900 text-white">
-      <Header />
+  return <Layout>
+      <NetworkBackground />
       <section className="w-full py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -180,6 +180,5 @@ export function App() {
           </button>
         </div>
       </section>
-      <Footer />
-    </div>;
+    </Layout>;
 }

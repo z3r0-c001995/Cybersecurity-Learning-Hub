@@ -9,7 +9,6 @@ export function Footer() {
   return <footer className="w-full bg-gray-900 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center">
               <Shield className="h-8 w-8 text-cyan-500" />
@@ -22,7 +21,6 @@ export function Footer() {
               software engineers.
             </p>
           </div>
-          {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -32,7 +30,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/courses" className="text-gray-400 hover:text-white transition-colors">
+                <Link to="/learn" className="text-gray-400 hover:text-white transition-colors">
                   Courses
                 </Link>
               </li>
@@ -48,7 +46,6 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          {/* Newsletter Section */}
           <div className="lg:col-span-2">
             <h3 className="text-lg font-semibold mb-4">
               Subscribe to Our Newsletter
@@ -64,7 +61,6 @@ export function Footer() {
                 </button>
               </div>
             </form>
-            {/* Social Links */}
             <div className="mt-6">
               <div className="flex space-x-4">
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -80,7 +76,6 @@ export function Footer() {
             </div>
           </div>
         </div>
-        {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-gray-800">
           <p className="text-center text-gray-400">
             © {new Date().getFullYear()} CyberLearn. All rights reserved.
